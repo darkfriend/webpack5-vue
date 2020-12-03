@@ -1,6 +1,6 @@
 {
   "name": "webpack5-vue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Webpack5 vue.js full config with vue-router+scss+vuex+js(stage3)+html+images+fonts and optimizations",
   "keywords": [
     "vue",
