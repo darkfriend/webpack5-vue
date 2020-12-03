@@ -13,7 +13,7 @@ module.exports = {
     mode: envMode,
     devtool: isDev ? '#cheap-source-map' : '#source-map',
     entry: {
-        main: '../src/index.js',
+        main: path.resolve(path.join(paths.src, 'index.js')),
         polyfill: '@babel/polyfill',
     },
     output: {
@@ -62,7 +62,7 @@ module.exports = {
         new CleanWebpackPlugin(),
         new VueLoaderPlugin(),
         new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, '../src/index.html'),
+            template: path.resolve(path.join(paths.src, 'index.html')),
             filename: 'index.html',
         }),
     ],
